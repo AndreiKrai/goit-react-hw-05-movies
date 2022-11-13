@@ -1,16 +1,23 @@
+import Navbar from './Navbar/Navbar';
+import SearchForm from '../pages/SearchPage/SearchForm';
+import { Routes, Route } from 'react-router-dom';
+import TrendingToday from './TrendingToday/TrendingToday';
+import SingleMoviePage from 'pages/SingleMoviePage';
+import Casts from 'pages/Casts/Casts';
+import Review from 'pages/Review/Review';
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<TrendingToday />} />
+        <Route path="movies" element={<SearchForm />} />
+        <Route path="movie/:movieId" element={<SingleMoviePage />} />
+        <Route path="movie/:movieId/casts" element={<Casts />} />
+        <Route path="movie/:movieId/reviews" element={<Review />} />
+
+        {/* </Route> */}
+      </Routes>
+    </>
   );
 };
