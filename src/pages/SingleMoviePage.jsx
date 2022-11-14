@@ -1,7 +1,7 @@
 import { getSingleMovie } from 'helpers/api';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams,Outlet } from 'react-router-dom';
 
 export default function SingleMoviePage() {
   const params = useParams();
@@ -27,8 +27,8 @@ export default function SingleMoviePage() {
   const { title, poster_path, id, overview, vote_average } = movie;
 
 
-  return (
-    movie && (
+  return (<div>
+    {movie && (
       <>
         <div className="card d-flex flex-row p-2">
           {/* style="width: 18rem;" */}
@@ -74,7 +74,9 @@ export default function SingleMoviePage() {
             </Link>
           </li>
         </ul>
+        <Outlet/>
+
       </>
-    )
+    )}</div>
   );
 }
