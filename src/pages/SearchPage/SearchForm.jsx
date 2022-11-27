@@ -24,7 +24,7 @@ export default function SearchForm() {
       }
       getMovieByNameAPI();
     }
-  }, []);
+  }, [query]);
 
   // const navigate=useNavigate()
   const handleInput = e => {
