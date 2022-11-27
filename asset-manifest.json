@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AndreiKrai/goit-react-hw-05-movies.git/static/css/main.9ba147dc.css",
+    "main.js": "/AndreiKrai/goit-react-hw-05-movies.git/static/js/main.4f4a2847.js",
+    "index.html": "/AndreiKrai/goit-react-hw-05-movies.git/index.html",
+    "main.9ba147dc.css.map": "/AndreiKrai/goit-react-hw-05-movies.git/static/css/main.9ba147dc.css.map",
+    "main.4f4a2847.js.map": "/AndreiKrai/goit-react-hw-05-movies.git/static/js/main.4f4a2847.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ba147dc.css",
+    "static/js/main.4f4a2847.js"
+  ]
+}
