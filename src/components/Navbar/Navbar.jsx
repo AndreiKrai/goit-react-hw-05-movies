@@ -1,17 +1,20 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export default function Navbar() {
+  // const[isActive,seIsActice]=useState(false)
+  // const handleIsActive=(e)=>{seIsActice(!isActive);
+  // console.log('handleIsActive')}
   return (
     <div className="card text-center">
   <div className="card-header">
     <ul className="nav nav-tabs card-header-tabs">
       <li className="nav-item">
-        <Link className="nav-link active" aria-current="true" to="/">Home</Link>
+        <NavLink className="nav-link" aria-current="true" to="/">Home</NavLink>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="movies">Movies</Link>
+        <NavLink className="nav-link" to="movies">Movies</NavLink>
       </li>
     </ul>
   </div>
