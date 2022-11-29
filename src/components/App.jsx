@@ -9,18 +9,18 @@ import HomePage from 'pages/HomePage/HomePage';
 export const App = () => {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />        
-        <Route path="movies" element={<SearchForm />}/>     
+        <Route path="/" element={<Navbar />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="movies" element={<SearchForm />} />
 
-        <Route path="movies/:movieId" element={<SingleMoviePage />}>
-          <Route path="casts" element={<Casts />} />
-          <Route path="reviews" element={<Review />} />
-        </Route>        
+          <Route path="movies/:movieId" element={<SingleMoviePage />}>
+            <Route path="casts" element={<Casts />} />
+            <Route path="reviews" element={<Review />} />
+          </Route>
 
-        <Route path="*" element={<NotFoundPage />} />
-
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
       </Routes>
     </>
   );
