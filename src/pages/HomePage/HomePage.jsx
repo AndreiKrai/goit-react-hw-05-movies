@@ -12,7 +12,6 @@ export default function HomePage() {
       try {
         const data = await getDataFromAPI();
         setTrendingMovie(data);
-        console.log(data);
       } catch (error) {
         setError(error);
       }

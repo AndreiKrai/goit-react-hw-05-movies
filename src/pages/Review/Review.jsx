@@ -12,7 +12,6 @@ export default function Review() {
     async function getReviewsApi() {
       const data = await getReviews(movieId);
       setReviews(data.results);
-      console.log(data);
     }
     getReviewsApi();
   }, [movieId]);
