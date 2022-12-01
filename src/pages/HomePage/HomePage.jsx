@@ -1,5 +1,5 @@
 import { getDataFromAPI } from 'helpers/api';
-import MovieList from 'pages/MovieList/MovieList';
+import MovieList from 'components/MovieList/MovieList';
 import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 import { useState, useEffect } from 'react';
 

@@ -1,5 +1,5 @@
 import { getMovieByName } from 'helpers/api';
-import MovieList from 'pages/MovieList/MovieList';
+import MovieList from 'components/MovieList/MovieList';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
