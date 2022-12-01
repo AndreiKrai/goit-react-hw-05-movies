@@ -10,7 +10,7 @@ import Navbar from './Navbar/Navbar';
 import { lazy } from 'react';
 
 const SearchForm=lazy(()=>import('../pages/SearchPage/SearchForm'))
-const SingleMoviePage=lazy(()=>import('components/SingleMoviePage'))
+const SingleMoviePage=lazy(()=>import('pages/SingleMoviePage'))
 const Casts=lazy(()=>import('components/Casts/Casts'))
 const Review=lazy(()=>import('components/Review/Review'))
 const NotFoundPage=lazy(()=>import('pages/NotFoundPage/NotFoundPage'))
